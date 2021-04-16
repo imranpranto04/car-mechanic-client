@@ -5,7 +5,7 @@ import HeaderMain from '../HeaderMain/HeaderMain';
 const Header = () => {
     return (
         <div>
-            <Navbars></Navbars>
+            {/* <Navbars></Navbars> */}
             <HeaderMain></HeaderMain>
             
         </div>

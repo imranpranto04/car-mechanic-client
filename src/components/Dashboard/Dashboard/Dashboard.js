@@ -13,10 +13,8 @@ const Dashboard = () => {
         <div className= "col-md-2">
             <Sidebar></Sidebar>
         </div>
-        <div  className="col-md-10">
-            <BookingService></BookingService>
-        </div>
-
+            {/* <BookingService></BookingService> */}
+       
     </div>
     );
 };

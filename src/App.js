@@ -13,6 +13,9 @@ import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import BookingService from './components/Dashboard/BookingService/BookingService';
 import AddService from './components/AddService/AddService';
 import AddReview from './components/AddReview/AddReview';
+import Checkout from './components/Checkout/Checkout';
+import Order from './components/Dashboard/Order/Order';
+import Navbars from './components/Home/Navbars/Navbars';
 
 export const UserContext = createContext();
 
@@ -23,9 +26,10 @@ function App() {
   return (
 
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <h4>User Name: </h4>
 
     <Router>
+      <Navbars/>
+    <h4 className="text-center">User: {loggedInUser.name}</h4>
 
     <Switch>
 
@@ -45,12 +49,20 @@ function App() {
         <BookingService></BookingService>
       </Route>
 
+      <Route path="/order">
+        <Order/>
+      </Route>
+
       <Route path="/addService">
         <AddService></AddService>
       </Route>
 
       <Route path="/addReview">
         <AddReview></AddReview>
+      </Route>
+
+      <Route path="/checkout/:_id">
+        <Checkout/>
       </Route>
 
       <Route exact path="/">

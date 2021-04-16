@@ -7,6 +7,7 @@ import './Sidebar.css';
 
 const Sidebar = () => {
     return (
+        <div className="row">
         <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{ height: "100vh" }}>
             <ul className="list-unstyled">
                 <li>
@@ -15,12 +16,12 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/booking" className="text-white">
+                    <Link to="/order" className="text-white">
                         <FontAwesomeIcon icon={faGripHorizontal} /> <span>Booking</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/addReview" className="text-white">
+                    <Link to="/addReview" className="text-white">
                         <FontAwesomeIcon icon={faGripHorizontal} /> <span>Add Review</span>
                     </Link>
                 </li>
@@ -63,6 +64,7 @@ const Sidebar = () => {
             <div>
                 <Link to="/" className="text-white"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
             </div>
+         </div>
          </div>
     );
 };

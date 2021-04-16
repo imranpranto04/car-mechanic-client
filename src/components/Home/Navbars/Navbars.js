@@ -15,8 +15,8 @@ const Navbars = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto nav">
                         <li><Link Link to="/home">Home</Link></li>
-                        <li><Link link to="/order">Order</Link></li>
-                        <li><Link Link to="/delete">Delete Item</Link></li>
+                        <li><Link link to="/addService">Add Service</Link></li>
+                        <li><Link Link to="/dashboard">Dashboard</Link></li>
                         <li><Link Link to="/addProduct">Admin</Link></li>
                         <li>
 

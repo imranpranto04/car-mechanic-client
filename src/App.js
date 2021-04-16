@@ -9,6 +9,10 @@ import {
 import Home from './components/Home/Home/Home';
 import { createContext, useState } from 'react';
 import Login from './components/Login/Login/Login';
+import Dashboard from './components/Dashboard/Dashboard/Dashboard';
+import BookingService from './components/Dashboard/BookingService/BookingService';
+import AddService from './components/AddService/AddService';
+import AddReview from './components/AddReview/AddReview';
 
 export const UserContext = createContext();
 
@@ -19,6 +23,7 @@ function App() {
   return (
 
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+      <h4>User Name: </h4>
 
     <Router>
 
@@ -30,6 +35,22 @@ function App() {
 
       <Route  path="/login">
         <Login></Login>
+      </Route>
+
+      <Route path="/dashboard">
+        <Dashboard></Dashboard>
+      </Route>
+
+      <Route path="/dashboard/booking">
+        <BookingService></BookingService>
+      </Route>
+
+      <Route path="/addService">
+        <AddService></AddService>
+      </Route>
+
+      <Route path="/addReview">
+        <AddReview></AddReview>
       </Route>
 
       <Route exact path="/">

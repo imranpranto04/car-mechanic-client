@@ -7,10 +7,10 @@ import './Navbars.css';
 const Navbars = () => {
     return (
 
-        <div className="container">
-            <Navbar bg="light" expand="lg">
+        <div className="container-fluid">
+            <Navbar style={{backgroundColor: '#F0F8FF'}} expand="lg">
                 <Navbar.Brand className="">
-                <Link to="/home"><img src={icon} alt=""/></Link> </Navbar.Brand>
+                <Link to="/home"><img style={{ width: '150px' }}src={icon} alt=""/></Link> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto nav">

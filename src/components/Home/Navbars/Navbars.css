@@ -1,5 +1,6 @@
 Nav li{
-    margin: 20px  ;
+    margin: 10px 20px ;
+    padding: 10px;
     text-decoration: none;
     font-size: 20px;
 }

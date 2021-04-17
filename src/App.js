@@ -31,7 +31,7 @@ function App() {
 
     <Router>
       <Navbars/>
-    <h4 className="text-center">User: {loggedInUser.name}</h4>
+    <h4 className="text-center mt-4 text-success">User: {loggedInUser.name}</h4>
 
     <Switch>
 

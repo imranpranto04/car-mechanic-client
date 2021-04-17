@@ -65,8 +65,8 @@ const Login = () => {
                         <button className="btn btn-danger" onClick={handleGoogleSignIn}>Google Sign in</button>
                     </div>
                 </div>
-                <div className="col-md-6 d-none d-md-block align-self-end">
-                    <img className="img-fluid w-75" src={loginBg} alt="" />
+                <div className="col-md-6">
+                    <img className="img-fluid w-75 p-4" src={loginBg} alt="" />
                 </div>
             </div>
         </div>

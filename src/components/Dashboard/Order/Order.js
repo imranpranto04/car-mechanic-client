@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { useContext } from 'react';
+import { UserContext } from '../../../App';
 import BookingService from '../BookingService/BookingService';
 import Sidebar from '../Sidebar/Sidebar';
 
 const Order = () => {
 
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [order, setOrder] = useState([]);
 
     useEffect( ()=>{
 
-        fetch('http://localhost:5000/orders')
+        fetch('http://localhost:5000/orders?email='+loggedInUser.email)
         .then(res => res.json())
         .then(data => setOrder(data));
     }, [])

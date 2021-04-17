@@ -26,6 +26,11 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link to="/delete" className="text-white">
+                        <FontAwesomeIcon icon={faGripHorizontal} /> <span>Delete Service</span>
+                    </Link>
+                </li>
+                <li>
                     <Link to="/" className="text-white">
                         <FontAwesomeIcon icon={faHome} /> <span>Home</span>
                     </Link>

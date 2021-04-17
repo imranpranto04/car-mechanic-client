@@ -16,6 +16,7 @@ import AddReview from './components/AddReview/AddReview';
 import Checkout from './components/Checkout/Checkout';
 import Order from './components/Dashboard/Order/Order';
 import Navbars from './components/Home/Navbars/Navbars';
+import Delete from './components/Delete/Delete/Delete';
 
 export const UserContext = createContext();
 
@@ -59,6 +60,10 @@ function App() {
 
       <Route path="/addReview">
         <AddReview></AddReview>
+      </Route>
+
+      <Route path="/delete">
+        <Delete></Delete>
       </Route>
 
       <Route path="/checkout/:_id">

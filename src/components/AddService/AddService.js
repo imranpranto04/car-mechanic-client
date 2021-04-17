@@ -2,6 +2,9 @@ import axios from 'axios';
 import React, { useState } from 'react';
 
 const AddService = () => {
+    const handleAlert = () => {
+        alert('Service added successfully');
+    }
 
     const [imageURL, setImageURL] = useState(null);
     const [info, setInfo] = useState({});
@@ -86,7 +89,7 @@ const AddService = () => {
                 </div>
 
                     <br />
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button onClick={handleAlert} type="submit" className="btn btn-primary">Submit</button>
                 </form>
                     </div>
     );

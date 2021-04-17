@@ -7,10 +7,10 @@ const ReviewDetails = (props) => {
     return (
       <div className="col-md-4 my-3 h-100">
             <div className="card shadow-sm">
-        <div className="card-body">
-            <p className="card-text text-center bg-light">{description}</p>
+        <div className="card-body bg-info">
+            <p className="card-text text-center ">{description}</p>
         </div>
-        <div className="card-footer d-flex  align-items-center">
+        <div className="card-footer d-flex  align-items-center bg-light">
             {/* <img className="mx-3" src={} alt="" width="60"/> */}
             <div>
                 <h6 className="text-primary">{email}</h6>

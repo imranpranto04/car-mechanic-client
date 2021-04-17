@@ -14,13 +14,13 @@ const Navbars = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto nav">
-                        <li><Link Link to="/home">Home</Link></li>
-                        <li><Link link to="/addService">Add Service</Link></li>
-                        <li><Link Link to="/dashboard">Dashboard</Link></li>
-                        <li><Link Link to="/addProduct">Admin</Link></li>
+                        <li><Link style={{ textDecoration: 'none', color: '#3A4256' }} Link to="/home">Home</Link></li>
+                        <li><Link style={{ textDecoration: 'none', color: '#3A4256' }} link to="/addService">Add Service</Link></li>
+                        <li><Link style={{ textDecoration: 'none', color: '#3A4256' }} Link to="/dashboard">Dashboard</Link></li>
+                        <li><Link style={{ textDecoration: 'none' , color: '#3A4256'}} Link to="/addProduct">Admin</Link></li>
                         <li>
 
-                            <Link to="/login">Login</Link>
+                            <Link style={{ textDecoration: 'none', color: '#3A4256' }} to="/login">Login</Link>
 
                         </li>
 

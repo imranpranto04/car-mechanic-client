@@ -14,7 +14,9 @@ const Dashboard = () => {
             <Sidebar></Sidebar>
         </div>
             {/* <BookingService></BookingService> */}
-       
+            <div className= "col-md-10 text-center">
+            <h2>Welcome to Dashboard</h2>
+            </div>
     </div>
     );
 };

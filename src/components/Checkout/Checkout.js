@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../App';
+import ProcessPayment from '../Payment/ProcessPayment/ProcessPayment';
 
 
 const Checkout = () => {
@@ -47,7 +48,7 @@ const Checkout = () => {
                 <tbody>
                     <tr>
                         <th scope="row">1</th>
-                        <td>{showService.name}</td>
+                        <td><h4 className="text-success">{showService.name}</h4></td>
                         <td>${showService.price}</td>
                     </tr>
                   
@@ -62,6 +63,11 @@ const Checkout = () => {
             <div className="d-flex justify-content-end">
             <button onClick={orderClick} className="btn btn-danger"><Link className="text-white" link to="/order">Order</Link></button>
             
+            </div>
+
+            <div>
+                <h2>Payment Metod</h2>
+                <ProcessPayment/>
             </div>
         </div>
     );

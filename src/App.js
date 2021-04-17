@@ -17,6 +17,7 @@ import Checkout from './components/Checkout/Checkout';
 import Order from './components/Dashboard/Order/Order';
 import Navbars from './components/Home/Navbars/Navbars';
 import Delete from './components/Delete/Delete/Delete';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -42,36 +43,40 @@ function App() {
         <Login></Login>
       </Route>
 
-      <Route path="/dashboard">
+      <PrivateRoute  path="/dashboard">
         <Dashboard></Dashboard>
-      </Route>
+      </PrivateRoute>
 
-      <Route path="/dashboard/booking">
+      {/* <Route path="/dashboard/booking">
         <BookingService></BookingService>
-      </Route>
+      </Route> */}
 
-      <Route path="/order">
+      <PrivateRoute  path="/order">
         <Order/>
-      </Route>
+      </PrivateRoute>
 
-      <Route path="/addService">
+      <PrivateRoute  path="/addService">
         <AddService></AddService>
-      </Route>
+      </PrivateRoute>
 
       <Route path="/addReview">
         <AddReview></AddReview>
       </Route>
 
-      <Route path="/delete">
+      <PrivateRoute  path="/delete">
         <Delete></Delete>
-      </Route>
+      </PrivateRoute>
 
-      <Route path="/checkout/:_id">
+      <PrivateRoute  path="/checkout/:_id">
         <Checkout/>
-      </Route>
+      </PrivateRoute>
 
       <Route exact path="/">
         <Home></Home>
+      </Route>
+
+      <Route  path="*">
+        <h2 className="text-danger text-center">404 Not Found!</h2>
       </Route>
     </Switch>
     

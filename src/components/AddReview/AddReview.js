@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import Sidebar from '../Dashboard/Sidebar/Sidebar';
 
 const AddReview = () => {
-
 
     const [review, setreview] = useState({});
 
@@ -35,7 +35,10 @@ const AddReview = () => {
     }
 
     return (
-        <div className="container">
+        <section className="container-fluid row">
+            <Sidebar/>
+
+            <div className="col-md-10 p-4 w-75" style={{ position: "absolute", right: 0, backgroundColor: "#77BFC7" }}>
             <h4>Add Review</h4>
 
             <form onSubmit={handleSubmit}>
@@ -59,6 +62,7 @@ const AddReview = () => {
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
+        </section>
     );
 };
 

@@ -7,7 +7,7 @@ import './Sidebar.css';
 
 const Sidebar = () => {
     return (
-        <div className="row">
+        // <div className="row">
         <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{ height: "100vh" }}>
             <ul className="list-unstyled">
                 <li>
@@ -70,7 +70,7 @@ const Sidebar = () => {
                 <Link to="/" className="text-white"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
             </div>
          </div>
-         </div>
+        //  </div>
     );
 };
 

@@ -1,23 +1,5 @@
 import React, { useEffect, useState  } from 'react';
-import paint from '../../../images/paint.jpg'
-import engine from '../../../images/engine.jpg'
-import glass from '../../../images/glass.jpg'
 import ServiceDetails from '../ServiceDatails/ServiceDetails';
-
-// const serviceData = [
-//     {
-//         name: 'Engine, brake and transmission experts',
-//         img: engine
-//     },
-//     {
-//         name: 'Auto Paint expert',
-//         img: paint
-//     },
-//     {
-//         name: 'Autoglass repair',
-//         img: glass
-//     }
-// ]
 
 const Services = () => {
 

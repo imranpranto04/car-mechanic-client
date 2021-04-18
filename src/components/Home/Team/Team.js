@@ -5,6 +5,7 @@ const Team = () => {
     return (
         <section>
             <div className="container">
+                <h2 className="text-center text-primary my-5">TEAM</h2>
                 <div className="row d-flex align-items-center">
 
                 <div className="col-md-5">

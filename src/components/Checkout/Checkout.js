@@ -66,7 +66,7 @@ const Checkout = () => {
             </div>
 
             <div>
-                <h2>Payment Metod</h2>
+                <h2 className="text-danger">Payment Metod</h2>
                 <ProcessPayment/>
             </div>
         </div>

@@ -18,17 +18,12 @@ const ServiceDetails = ({ service }) => {
     return (
         <div className="col-md-4 text-center my-3">
 
-            {/* <img style={{ height: '150px' }} src={service.imageURL} alt="" />
-            <h5 className="mt-3 mb-3">{service.name}</h5>
-            <p className="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quaerat?</p>onMouseLeave={() => set({ xys: [0, 0, 1] })}
-                style={{ transform: props.xys.interpolate(trans) }} */}
-
-            <animated.div className="card"
+            <animated.div className="card h-100"
                 onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
                 onMouseLeave={() => set({ xys: [0, 0, 1] })}
                 style={{ transform: props.xys.interpolate(trans) }}>
 
-                <div className="card h-100" style={{ width: '18rem' }}>
+                <div className="card h-100">
                     <img style={{ height: '200px' }} className="card-img-top img-fluid" src={image} alt="Card image cap" />
                     <div className="card-body">
                         <h5 className="card-title">Service: {name}</h5>

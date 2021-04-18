@@ -15,9 +15,10 @@ const Navbars = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto nav">
                         <li><Link style={{ textDecoration: 'none', color: '#3A4256' }} Link to="/home">Home</Link></li>
-                        <li><Link style={{ textDecoration: 'none', color: '#3A4256' }} link to="/addService">Add Service</Link></li>
                         <li><Link style={{ textDecoration: 'none', color: '#3A4256' }} Link to="/dashboard">Dashboard</Link></li>
-                        <li><Link style={{ textDecoration: 'none' , color: '#3A4256'}} Link to="/addProduct">Admin</Link></li>
+                        <li><Link style={{ textDecoration: 'none', color: '#3A4256' }} link to="/blogs">Blogs</Link></li>
+                        
+                        <li><Link style={{ textDecoration: 'none' , color: '#3A4256'}} Link to="/admin">Admin</Link></li>
                         <li>
 
                             <Link style={{ textDecoration: 'none', color: '#3A4256' }} to="/login">Login</Link>

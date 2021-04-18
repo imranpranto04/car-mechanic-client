@@ -1,13 +1,14 @@
 import React from 'react';
 import banner from '../../../../images/banner.jpg'
-import headerBg from '../../../../images/hederBg.png'
-import './HeaderMain.css'
+import './HeaderMain.css';
+
 
 
 const HeaderMain = () => {
+
     return (
         <section className="">
-            <div className="container">
+            <div className="container ">
                 <div className="row d-flex align-items-center">
 
                 <div className="col-md-5 headerMain">

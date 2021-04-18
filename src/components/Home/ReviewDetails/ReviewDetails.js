@@ -15,7 +15,7 @@ const ReviewDetails = (props) => {
                     <p className="card-text text-center ">{description}</p>
                 </div>
                 <div className="card-footer d-flex  align-items-center bg-light">
-                    <img className="mx-3" src={unknown} alt="" />
+                    <img className="mx-3" src={unknown} style={{height: '30px'}} alt="" />
                     <div>
                         <p className="text-danger">{email}</p>
                         <h2 className="m-0 text-success">{name}</h2>

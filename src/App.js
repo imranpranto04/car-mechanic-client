@@ -18,6 +18,8 @@ import Order from './components/Dashboard/Order/Order';
 import Navbars from './components/Home/Navbars/Navbars';
 import Delete from './components/Delete/Delete/Delete';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import Admin from './components/Dashboard/Admin/Admin';
+import Blogs from './components/Home/Blogs/Blogs/Blogs';
 
 export const UserContext = createContext();
 
@@ -47,10 +49,6 @@ function App() {
         <Dashboard></Dashboard>
       </PrivateRoute>
 
-      {/* <Route path="/dashboard/booking">
-        <BookingService></BookingService>
-      </Route> */}
-
       <PrivateRoute  path="/order">
         <Order/>
       </PrivateRoute>
@@ -67,9 +65,18 @@ function App() {
         <Delete></Delete>
       </PrivateRoute>
 
+      
+      <PrivateRoute  path="/admin">
+        <Admin></Admin>
+      </PrivateRoute>
+
       <PrivateRoute  path="/checkout/:_id">
         <Checkout/>
       </PrivateRoute>
+
+      <Route  path="/blogs">
+        <Blogs></Blogs>
+      </Route>
 
       <Route exact path="/">
         <Home></Home>
